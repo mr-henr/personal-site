@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+#background {
+    background-image: url(/src/assets/background.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    background: linear-gradient(black, rgba(0, 0, 0, 0));
+    padding: 20px;
+    
+}
+#title-color{
+    color: rgb(184, 0, 0);
+}
+.about-1 p{
+    margin: 7px 0px 25px 0px;
+}
+.about-1 h3{
+    margin-top: 10px;
+}
+
+.container{
+    padding: 5vw;
+}
+
+nav a{
+    padding: 10px;
+    font-size: 18px;
+
+}
+
+nav a:hover{
+    color: rgb(148, 8, 8);
+    transition: 0.3s all;
+}
+
+ul{
+display: flex;
+justify-content: space-between;
+list-style-type: none;
+align-items: center;
+padding: 30px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.FHMR img{
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid rgb(148, 8, 8);
+}
+
+.FHMR{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.FHMR nav{
+    margin-top: 15px;
+    margin-right: 50px;
+}
+.FHMR li{
+    padding-inline: 30px;
+}
+#contato-div{
+    padding-left: 50px;
+    padding-right: 80px;
+}
+.contato{
+    color: rgb(148, 8, 8);
+    border: 1px solid rgb(148, 8, 8);
+    border-radius: 15px;
+    padding: 8px;
+    font-size: 13px;
+    background: none;
+    font-weight: bold;
+    width: 150px;
+}
+.contato:hover{
+    background-color: rgb(148, 8, 8);
+    color: rgba(255, 255, 255, 0.829);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.text .contato{
+    margin-top: 10px;
+}
+.text{
+    padding: 100px 0px 0px 130px;
+}
+footer{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+footer a{
+    text-align: center;
+    margin: 16px;
+}
+.rodape img{
+    width: 45px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.rodape img:hover{
+    width: 50px;
+    transition: 0.3s;
+}
+.rodape{
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .text {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .FHMR {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+    .FHMR ul{
+        flex-direction: row;
+    }
+    .FHMR nav {
+        margin-right: 0;
+    }
+    .FHMR li {
+        padding: 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    #contato-div {
+        padding: 20px;
+        text-align: center;
+    }
+    .rodape{
+        display:flexbox;
+        
+
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav a {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .text {
+        padding: 30px 10px;
+    }
+    .contato {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        padding: 20px;
+    }
+    .FHMR img {
+        width: 60px;
+        height: 60px;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img {
+        width: 35px;
+    }
+}

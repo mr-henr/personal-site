@@ -18,7 +18,7 @@ body{
     background-color: rgb(27, 27, 27);
 }
 #background {
-    background-image: url(../src/assets/background.png);
+    background-image: url(https://mr-henr.github.io/personal-site/src/assets/background.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
